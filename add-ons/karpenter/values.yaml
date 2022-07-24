@@ -2,7 +2,7 @@ karpenter:
   serviceAccount:
     create: false
   nodeSelector:
-    node_group: karpenter
+    ng: karpenter
   tolerations:
     - key: "dedicated"
       operator: "Equal"
