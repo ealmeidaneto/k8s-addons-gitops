@@ -25,6 +25,8 @@ spec:
           value: {{ .Values.karpenter.controllerClusterEndpoint }}
         - name: karpenter.aws.defaultInstanceProfile
           value: {{ .Values.karpenter.awsDefaultInstanceProfile }}
+        - name: karpenter.serviceAccount.annotations
+          value: {{ .Values.karpenter.serviceAccountAnnotations }}
   destination:
     name: 'in-cluster'
     namespace: karpenter
