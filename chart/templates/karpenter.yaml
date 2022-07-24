@@ -39,6 +39,6 @@ spec:
           factor: 2
           maxDuration: 1m
       syncOptions:
-        CreateNamespace=true
+        - CreateNamespace=true
     
   {{- end -}}
