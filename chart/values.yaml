@@ -1,0 +1,38 @@
+# Global Values
+repoUrl: "https://github.com/ealmeidaneto/k8s-addons-gitops.git"
+targetRevision: HEAD
+region: ""
+account: ""
+clusterName: ""
+
+
+# Calico Values
+awsCalico:
+  enable: false
+
+
+# AWS for Fluent Bit Values
+awsForFluentBit:
+  enable: false
+  logGroupName:
+  serviceAccountName:
+
+# AWS Load Balancer Controller Values
+awsLoadBalancerController:
+  enable: false
+  serviceAccountName:
+
+
+# Karpenter Values
+karpenter:
+  enable: false
+  serviceAccountName:
+  controllerClusterEndpoint:
+  awsDefaultInstanceProfile:
+
+
+# Metrics Server Values
+metricsServer:
+  enable: false
+
+
