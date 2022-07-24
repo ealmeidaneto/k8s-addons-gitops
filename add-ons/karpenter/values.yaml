@@ -2,5 +2,10 @@ karpenter:
   serviceAccount:
     create: false
   nodeSelector:
-    kubernetes.io/os: linux
+    node_group: karpenter
+  tolerations:
+    - key: "dedicated"
+      operator: "Equal"
+      value: "karpenter"
+      effect: "NoSchedule"
   aws:
